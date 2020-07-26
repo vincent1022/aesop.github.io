@@ -26,6 +26,59 @@
           background-position: center;
           background-attachment: fixed;
         } */
+        #section-2 {
+            width: 100%;
+            /* height: 700px; */
+            background-color: rgb(179, 127, 76);
+            position: relative;
+
+        }
+
+        #section-2 .container {
+            width: 1140px;
+
+            /* background-color: rgb(12, 12, 12); */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 50px 0 0 0;
+
+        }
+
+        #section-2 .container .text {
+
+            width: 400px;
+            height: 700px;
+            position: relative;
+
+
+        }
+
+        #section-2 .container .text h3 {
+            position: absolute;
+            top: 100px;
+        }
+
+
+
+        #section-2 .container .text span {
+            letter-spacing: 4px;
+            position: absolute;
+            top: 180px;
+            line-height: 21px;
+        }
+
+
+        #section-2 .container .bcimg {
+            width: 650px;
+            height: 600px;
+            background-image: url('img/about.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+
 
         :root {
             --swiper-theme-color: #ffffff;
@@ -40,7 +93,7 @@
             height: 50px;
             background-color: #333;
             color: white;
-            font-size: 15px;
+            font-size: 13px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -56,7 +109,7 @@
             border: unset;
             margin: 10px;
             padding: 5px;
-            width:100%;
+            width: 100%;
         }
 
         @media(max-width: 991px) {
@@ -125,6 +178,81 @@
             position: absolute;
             text-align: center;
         }
+
+        @media(max-width: 1140px) {
+            #section-2 .container {
+                width: 100%;
+                padding: 27px;
+                /* display:block; */
+                /* justify-content:unset; */
+                flex-direction: column-reverse;
+
+
+
+            }
+
+            #section-2 .container .bcimg {
+
+                height: 350px;
+                width: 100%;
+
+
+
+            }
+
+            #section-2 .container .text {
+                /* padding: 30px; */
+
+                margin-top: -70px;
+                width: 100%;
+                position: relative;
+                height: 450px;
+
+
+            }
+
+            #section-2 .container .text h3 {
+                position: absolute;
+                top: 100px;
+            }
+
+            #section-2 .container .text span {
+                position: absolute;
+                top: 155px;
+            }
+
+        }
+
+        #gototop {
+            position: fixed;
+            right: 35px;
+            bottom: 5px;
+
+        }
+
+
+        #gototop div {
+            width: 35px;
+            height: 35px;
+            /* background-color: rgb(7, 29, 20);
+            color: honeydew; */
+            border-radius: 50%;
+            /* font-size: 20px;
+            font-weight: 800; */
+            /* text-align: center; */
+            /* line-height: 50px; */
+            transition: 0.05s;
+            /* border: 1px solid white; */
+            background-image: url('img/15.png');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #gototop div:hover {
+            background-color: rgb(8, 8, 8, 0.2);
+            border: 2px solid white;
+        }
     </style>
 </head>
 
@@ -136,8 +264,8 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 120px;
-              height: 50px;background-size: cover; background-position: center;margin-right:10px;" alt=""></a>
+            <a class="navbar-brand mr-xl-4" href="#"><img src="img/logo.png" style="width: 120px;
+              height: 50px;background-size: cover; background-position: center;" alt=""></a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-lg-0">
@@ -145,10 +273,10 @@
                         <a class="nav-link" href="#section-1" style="font-family:Microsoft JhengHei;">商品</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#parallax" style="font-family:Microsoft JhengHei;">哲學</a>
+                        <a class="nav-link" href="#section-2" style="font-family:Microsoft JhengHei;">閱覽</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="font-family:Microsoft JhengHei;">閱覽</a>
+                        <a class="nav-link" href="#parallax" style="font-family:Microsoft JhengHei;">哲學</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section-3" style="font-family:Microsoft JhengHei;">門店</a>
@@ -185,44 +313,154 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 py-3 ">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#exampleModalCenter-1">
                         <img src="img/10.png" class="card-img-top mt-3 " alt="...">
                         <div class="card-body">
                             <h5 style="text-align: center;">熾香水</h5>
-                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">微妙的迷人香氛，煙燻香調搭配上淡淡辛香，轉為深綠的木質土壤氣息</p>
+                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">
+                                微妙的迷人香氛，煙燻香調搭配上淡淡辛香，轉為深綠的木質土壤氣息</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 py-3">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#exampleModalCenter-2">
                         <img src="img/11.png" class="card-img-top mt-3" alt="...">
                         <div class="card-body">
                             <h5 style="text-align: center;">悟香水</h5>
-                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">加入大量羅勒調配，並散發出陣陣柑橘清香，令人感到活力充沛</p>
+                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">
+                                加入大量羅勒調配，並散發出陣陣柑橘清香，令人感到活力充沛</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 py-3">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#exampleModalCenter-3">
                         <img src="img/12.png" class="card-img-top mt-3" alt="...">
                         <div class="card-body">
-                            <h5 style="text-align:center;">馬拉喀什馥郁淡香水</h5>
-                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">融合傳統與創新，一款以東方木質與新鮮花香的濃郁香芬，帶有一抹野性色彩</p>
+                            <h5 style="text-align:center;">馬拉喀什香水</h5>
+                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">
+                                融合傳統與創新，一款以東方木質與新鮮花香的濃郁香芬，帶有一抹野性色彩</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 py-3">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#exampleModalCenter-4">
                         <img src="img/13.png" class="card-img-top mt-3" alt="...">
                         <div class="card-body">
                             <h5 style="text-align: center;">馥香水</h5>
-                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">是以玫瑰為主角的香水紫蘇與煙燻調的木質土壤香氣更深刻了此香氛創作</p>
+                            <p class="card-text" style="text-decoration: none;font-family:Microsoft JhengHei;">
+                                是以玫瑰為主角的香水紫蘇與煙燻調的木質土壤香氣更深刻了此香氛創作</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">熾香水</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/10.png" class="card-img-top mt-3 " alt="...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/hwyl/hwyl-eau-de-parfum'">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">悟香水</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/11.png" class="card-img-top mt-3" alt="...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/tacit/tacit-eau-de-parfum'">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter-3" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">馬拉喀什淡香水</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/12.png" class="card-img-top mt-3" alt="...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/marrakech/marrakech-intense-eau-de-toilette'">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter-4" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">馥香水</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/13.png" class="card-img-top mt-3" alt="...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/rozu/r-zu-eau-de-parfum'">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--閱覽-->
+    <div id="section-2">
+        <div class="container">
+            <div class="text">
+                <h3>我們的故事</h3>
+                <span style="font-family:Microsoft JhengHei;">
+                    Aesop成立於1987年，總部位於墨爾本，並於世界各地設有辦公室及多間店舖，我們一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。所有配方有效之餘亦絕對安全。每間店舖的專業顧問都會十分樂意為你介紹Aesop的產品，為你挑選最合適的選擇。</span>
+            </div>
+            <div class="bcimg"></div>
+        </div>
+    </div>
+
+
+
+
+
 
     <!--lax parallax-->
     <section id="parallax">
@@ -245,23 +483,28 @@
 
 
 
-    <div id="section-3" class="text-center py-5">
-        <h1 class="mb-1.5 " style="font-family:Microsoft JhengHei; font-size: 35px;">查詢門店</h1>
+    <div id="section-3" class=" py-5">
+        <h1 class="mb-1.5 text-center" style="font-family:Microsoft JhengHei; font-size: 35px;">查詢門店</h1>
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 col-lg-6">
                     <img src="img/09.jpg" class="w-100 h-40 py-4" alt="...">
                 </div>
-                <div class="col-12 col-lg-6 d-flex align-items-center">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Consectetur quis deleniti sit maxime? Repellendus consequuntur assumenda
-                    asperiores inventore, nesciunt voluptatem officia aut tempora architecto expedita illum eius quos
-                    iusto ipsam!</div>
+                <div class="col-12 col-lg-6 d-flex align-items-start flex-column justify-content-center">
+                    <h4>新光三越台中中港店</h4>
+                    <h4 style="font-family:Microsoft JhengHei;">台中市西屯區台灣大道三段301號3樓</h4>
+                    <h4 style="font-family:Microsoft JhengHei;">連絡電話 : +886 4 2251 7195</h4>
+                    <h4 class="d-flex flex-wrap" style="font-family:Microsoft JhengHei;">營業時間 : 11:00-22:00</h4>
+                </div>
             </div>
             <div class="row mb-5">
-                <div class="col-12 col-lg-6 order-1 order-lg-0 d-flex align-items-center">Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Perferendis cum assumenda aperiam voluptates pariatur dolores neque
-                    quibusdam! Voluptas, quos recusandae? Excepturi corporis assumenda exercitationem quasi cumque rem
-                    animi id earum.</div>
+                <div
+                    class="col-12 col-lg-6 order-1 order-lg-0 d-flex align-items-xl-end align-items-sm-start flex-column justify-content-center">
+                    <h4>勤美誠品綠園道店</h4>
+                    <h4 style="font-family:Microsoft JhengHei;">台中市西區公益路68號2樓</h4>
+                    <h4 style="font-family:Microsoft JhengHei;">連絡電話 : + 886 4 2322 1200</h4>
+                    <h4 class="d-flex flex-wrap" style="font-family:Microsoft JhengHei;">營業時間 : 11:00-22:00</h4>
+                </div>
                 <div class="col-12 col-lg-6">
                     <img src="img/08.jpg" class="w-100 h-150 py-4" alt="...">
                 </div>
@@ -269,6 +512,9 @@
         </div>
     </div>
 
+    <a id="gototop" href="#">
+        <div></div>
+    </a>
     <footer>本網頁僅供教學及練習使用，若有冒犯請洽0978-290629</footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
