@@ -14,77 +14,12 @@
             justify-content: center;
         }
 
-        /* #section-2{
-          width: 100%;
-          height: 55vh;
-          background-color:rgb(114, 63, 63);
-          color: white;
-          font-size: 35px;
-         
-          background-image: url('img/07.jpg');
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-        } */
-        #section-2 {
-            width: 100%;
-            /* height: 700px; */
-            background-color: rgb(179, 127, 76);
-            position: relative;
-
-        }
-
-        #section-2 .container {
-            width: 1140px;
-
-            /* background-color: rgb(12, 12, 12); */
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            padding: 50px 0 0 0;
-
-        }
-
-        #section-2 .container .text {
-
-            width: 400px;
-            height: 700px;
-            position: relative;
-
-
-        }
-
-        #section-2 .container .text h3 {
-            position: absolute;
-            top: 100px;
-        }
-
-
-
-        #section-2 .container .text span {
-            letter-spacing: 4px;
-            position: absolute;
-            top: 180px;
-            line-height: 21px;
-        }
-
-
-        #section-2 .container .bcimg {
-            width: 650px;
-            height: 600px;
-            background-image: url('img/about.jpg');
-            background-size: cover;
-            background-position: center;
-
-        }
-
 
         :root {
             --swiper-theme-color: #ffffff;
         }
 
-        #section-3 {
+        #section-4 {
             background-color: rgb(237, 225, 213);
         }
 
@@ -179,49 +114,7 @@
             text-align: center;
         }
 
-        @media(max-width: 1140px) {
-            #section-2 .container {
-                width: 100%;
-                padding: 27px;
-                /* display:block; */
-                /* justify-content:unset; */
-                flex-direction: column-reverse;
 
-
-
-            }
-
-            #section-2 .container .bcimg {
-
-                height: 350px;
-                width: 100%;
-
-
-
-            }
-
-            #section-2 .container .text {
-                /* padding: 30px; */
-
-                margin-top: -70px;
-                width: 100%;
-                position: relative;
-                height: 450px;
-
-
-            }
-
-            #section-2 .container .text h3 {
-                position: absolute;
-                top: 100px;
-            }
-
-            #section-2 .container .text span {
-                position: absolute;
-                top: 155px;
-            }
-
-        }
 
         #gototop {
             position: fixed;
@@ -253,6 +146,151 @@
             background-color: rgb(8, 8, 8, 0.2);
             border: 2px solid white;
         }
+
+
+        #section-2{
+            width: 100%;
+            /* background-color: darkgreen; */
+        }
+        .con{
+            width: 100%;
+            height: 100%;
+        }
+
+        .text{
+            width: 50%;
+            height: 80vh;
+            background-color:  rgb(25, 37, 37);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 254, 242);
+        }
+
+        .bcimg{
+            width: 50%;
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+            background-image: url('img/about.jpg');
+        }
+
+        .box{
+            width: 80%;
+        }
+
+        h3{
+            border-bottom: 0.5px solid rgb(255, 255, 255);
+            padding: 10px 0 10px 0;
+    
+        }
+        h4{
+            margin-top: 20px; 
+            letter-spacing: 2.5px;
+        }
+
+        @media (max-width: 1140px) {
+            .con{
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            .bcimg{
+                width: 100%;
+                height: 55vh;
+            }
+            .text{
+               width: 100%;
+               height: 50vh;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .con{
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            .bcimg{
+                width: 100%;
+                height: 50vh;
+            }
+            .text{
+               width: 100%;
+               height: 35vh;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+            .con{
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            .bcimg{
+                width: 100%;
+                height: 50vh;
+            }
+            .text{
+               width: 100%;
+               height: 75vh;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            .text{
+               width: 100%;
+               height: 60vh;
+               font-size: 10px;
+            }
+            
+            h3{
+                font-size: 1.2rem;
+            }
+            h4{
+                font-size: 1rem;
+            }
+        }
+        
+        #section-3{
+            width: 100%;
+        }
+
+        .bcimg-1{
+            width: 50%;
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+            background-image: url('img/about-1.jpg');
+        }
+
+        .textbg{
+            background-color: rgb(63, 56, 48);
+        }
+
+        @media (max-width: 1140px) {
+            .bcimg-1{
+                width: 100%;
+                height: 55vh;      
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bcimg-1{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .bcimg-1{
+                width: 100%;
+                height: 50vh;
+            }
+ 
+        }
+
+
     </style>
 </head>
 
@@ -279,7 +317,7 @@
                         <a class="nav-link" href="#parallax" style="font-family:Microsoft JhengHei;">哲學</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section-3" style="font-family:Microsoft JhengHei;">門店</a>
+                        <a class="nav-link" href="#section-4" style="font-family:Microsoft JhengHei;">店鋪</a>
                     </li>
                 </ul>
             </div>
@@ -372,7 +410,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
-                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/hwyl/hwyl-eau-de-parfum'">BUY
+                        onclick="location.href='https://reurl.cc/O19e0R'">BUY
                         NOW</button>
                 </div>
             </div>
@@ -394,7 +432,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
-                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/tacit/tacit-eau-de-parfum'">BUY
+                        onclick="location.href='https://reurl.cc/3DvZ59'">BUY
                         NOW</button>
                 </div>
             </div>
@@ -416,7 +454,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
-                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/marrakech/marrakech-intense-eau-de-toilette'">BUY
+                        onclick="location.href='https://reurl.cc/mnENvW'">BUY
                         NOW</button>
                 </div>
             </div>
@@ -438,7 +476,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
-                        onclick="location.href='https:www.aesop.com/tw/p/fragrance/rozu/r-zu-eau-de-parfum'">BUY
+                        onclick="location.href='https://reurl.cc/oLWqev'">BUY
                         NOW</button>
                 </div>
             </div>
@@ -447,15 +485,29 @@
 
     <!--閱覽-->
     <div id="section-2">
-        <div class="container">
-            <div class="text">
-                <h3>我們的故事</h3>
-                <span style="font-family:Microsoft JhengHei;">
-                    Aesop成立於1987年，總部位於墨爾本，並於世界各地設有辦公室及多間店舖，我們一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。所有配方有效之餘亦絕對安全。每間店舖的專業顧問都會十分樂意為你介紹Aesop的產品，為你挑選最合適的選擇。</span>
+        <div class="con d-flex flex-wrap">
+            <div class="text" style="font-family:Microsoft JhengHei;">
+                <div class="box">
+                    <h3>我們的故事</h3>
+                    <h4>成立於1987年，總部位於墨爾本，並於世界各地設有多間店舖，我們一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。每間店舖的專業顧問都會十分樂意為你介紹Aesop的產品，為你挑選最合適的選擇。</h4>
+                </div>
             </div>
-            <div class="bcimg"></div>
+            <div class="bcimg"> </div>
         </div>
     </div>
+
+    <div id="section-3">
+        <div class="con d-flex flex-wrap">
+            <div class="bcimg-1 order-1 order-lg-0"> </div>
+            <div class="text textbg" style="font-family:Microsoft JhengHei;">
+                <div class="box">
+                    <h3>產品研製</h3>
+                    <h4>我們專業的科研專家團隊在Aesop總部的專門實驗室內默默耕耘，努力構思更多新產品、研發新配方，為產品構建雛型。我們用於創製產品的各種優質成分，均來自全球最具信譽的供應商，確保質量得到保證。</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -483,7 +535,7 @@
 
 
 
-    <div id="section-3" class=" py-5">
+    <div id="section-4" class=" py-5">
         <h1 class="mb-1.5 text-center" style="font-family:Microsoft JhengHei; font-size: 35px;">查詢門店</h1>
         <div class="container">
             <div class="row mb-5">
@@ -491,19 +543,19 @@
                     <img src="img/09.jpg" class="w-100 h-40 py-4" alt="...">
                 </div>
                 <div class="col-12 col-lg-6 d-flex align-items-start flex-column justify-content-center">
-                    <h4>新光三越台中中港店</h4>
-                    <h4 style="font-family:Microsoft JhengHei;">台中市西屯區台灣大道三段301號3樓</h4>
-                    <h4 style="font-family:Microsoft JhengHei;">連絡電話 : +886 4 2251 7195</h4>
-                    <h4 class="d-flex flex-wrap" style="font-family:Microsoft JhengHei;">營業時間 : 11:00-22:00</h4>
+                    <h5>新光三越台中中港店</h5>
+                    <h5 style="font-family:Microsoft JhengHei;">台中市西屯區台灣大道三段301號3樓</h5>
+                    <h5 style="font-family:Microsoft JhengHei;">連絡電話 : +886 4 2251 7195</h5>
+                    <h5 class="d-flex flex-wrap" style="font-family:Microsoft JhengHei;">營業時間 : 11:00-22:00</h5>
                 </div>
             </div>
             <div class="row mb-5">
                 <div
                     class="col-12 col-lg-6 order-1 order-lg-0 d-flex align-items-xl-end align-items-sm-start flex-column justify-content-center">
-                    <h4>勤美誠品綠園道店</h4>
-                    <h4 style="font-family:Microsoft JhengHei;">台中市西區公益路68號2樓</h4>
-                    <h4 style="font-family:Microsoft JhengHei;">連絡電話 : + 886 4 2322 1200</h4>
-                    <h4 class="d-flex flex-wrap" style="font-family:Microsoft JhengHei;">營業時間 : 11:00-22:00</h4>
+                    <h5>勤美誠品綠園道店</h5>
+                    <h5 style="font-family:Microsoft JhengHei;">台中市西區公益路68號2樓</h5>
+                    <h5 style="font-family:Microsoft JhengHei;">連絡電話 : + 886 5 2322 1200</h5>
+                    <h5 class="d-flex flex-wrap" style="font-family:Microsoft JhengHei;">營業時間 : 11:00-22:00</h5>
                 </div>
                 <div class="col-12 col-lg-6">
                     <img src="img/08.jpg" class="w-100 h-150 py-4" alt="...">
