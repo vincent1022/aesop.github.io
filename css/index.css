@@ -1,0 +1,279 @@
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+
+:root {
+    --swiper-theme-color: #ffffff;
+}
+
+#section-4 {
+    background-color: rgb(237, 225, 213);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-1.py-5 {
+    background-color: rgb(237, 225, 213);
+
+}
+
+.card {
+    background-color: rgb(237, 225, 213);
+    border: unset;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+@media(max-width: 991px) {
+    .card {
+        width: 62%;
+        margin: auto;
+    }
+}
+
+
+/* .swiper-container {
+    width: 100%;
+    height: 55vh;
+} */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#bgnav {
+    background-color: rgb(255, 254, 242);
+}
+
+
+#parallax {
+    position: relative;
+    height: 6000px;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/07.jpg');
+    background-size: cover;
+    background-position: center;
+
+    position: sticky;
+    top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax_text {
+    font-size: 30px;
+    color: white;
+    width: 75%;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+#gototop {
+    position: fixed;
+    right: 35px;
+    bottom: 5px;
+
+}
+
+
+#gototop div {
+    width: 35px;
+    height: 35px;
+    /* background-color: rgb(7, 29, 20);
+    color: honeydew; */
+    border-radius: 50%;
+    /* font-size: 20px;
+    font-weight: 800; */
+    /* text-align: center; */
+    /* line-height: 50px; */
+    transition: 0.05s;
+    /* border: 1px solid white; */
+    background-image: url('img/15.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gototop div:hover {
+    background-color: rgb(8, 8, 8, 0.2);
+    border: 2px solid white;
+}
+
+
+#section-2{
+    width: 100%;
+    /* background-color: darkgreen; */
+}
+.con{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    width: 50%;
+    height: 80vh;
+    background-color:  rgb(25, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 254, 242);
+}
+
+.bcimg{
+    width: 50%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/about-1.jpg');
+}
+
+.box{
+    width: 80%;
+}
+
+h3{
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+    padding: 10px 0 10px 0;
+
+}
+h4{
+    margin-top: 20px; 
+    letter-spacing: 2.5px;
+}
+
+@media (max-width: 1140px) {
+    .con{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .bcimg{
+        width: 100%;
+        height: 55vh;
+    }
+    .text{
+       width: 100%;
+       height: 50vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .con{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .bcimg{
+        width: 100%;
+        height: 50vh;
+    }
+    .text{
+       width: 100%;
+       height: 35vh;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .con{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .bcimg{
+        width: 100%;
+        height: 50vh;
+    }
+    .text{
+       width: 100%;
+       height: 75vh;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .text{
+       width: 100%;
+       height: 60vh;
+       font-size: 10px;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+}
+
+#section-3{
+    width: 100%;
+}
+
+.bcimg-1{
+    width: 50%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/about-1.jpg');
+}
+
+.textbg{
+    background-color: rgb(63, 56, 48);
+}
+
+@media (max-width: 1140px) {
+    .bcimg-1{
+        width: 100%;
+        height: 55vh;      
+    }
+}
+
+@media (max-width: 768px) {
+    .bcimg-1{
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .bcimg-1{
+        width: 100%;
+        height: 50vh;
+    }
+
+}

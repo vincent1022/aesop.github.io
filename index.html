@@ -8,293 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <style>
-        #container {
-            display: flex;
-            justify-content: center;
-        }
-
-
-        :root {
-            --swiper-theme-color: #ffffff;
-        }
-
-        #section-4 {
-            background-color: rgb(237, 225, 213);
-        }
-
-        footer {
-            width: 100%;
-            height: 50px;
-            background-color: #333;
-            color: white;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #section-1.py-5 {
-            background-color: rgb(237, 225, 213);
-
-        }
-
-        .card {
-            background-color: rgb(237, 225, 213);
-            border: unset;
-            margin: 10px;
-            padding: 5px;
-            width: 100%;
-        }
-
-        @media(max-width: 991px) {
-            .card {
-                width: 62%;
-                margin: auto;
-            }
-        }
-
-
-
-        /* .swiper-container {
-            width: 100%;
-            height: 55vh;
-        } */
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        #bgnav {
-            background-color: rgb(255, 254, 242);
-        }
-
-
-        #parallax {
-            position: relative;
-            height: 6000px;
-        }
-
-        .background {
-            width: 100%;
-            height: 100vh;
-            background-image: url('img/07.jpg');
-            background-size: cover;
-            background-position: center;
-
-            position: sticky;
-            top: 30px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .parallax_text {
-            font-size: 30px;
-            color: white;
-            width: 75%;
-            position: absolute;
-            text-align: center;
-        }
-
-
-
-        #gototop {
-            position: fixed;
-            right: 35px;
-            bottom: 5px;
-
-        }
-
-
-        #gototop div {
-            width: 35px;
-            height: 35px;
-            /* background-color: rgb(7, 29, 20);
-            color: honeydew; */
-            border-radius: 50%;
-            /* font-size: 20px;
-            font-weight: 800; */
-            /* text-align: center; */
-            /* line-height: 50px; */
-            transition: 0.05s;
-            /* border: 1px solid white; */
-            background-image: url('img/15.png');
-            background-size: cover;
-            background-position: center;
-
-        }
-
-        #gototop div:hover {
-            background-color: rgb(8, 8, 8, 0.2);
-            border: 2px solid white;
-        }
-
-
-        #section-2{
-            width: 100%;
-            /* background-color: darkgreen; */
-        }
-        .con{
-            width: 100%;
-            height: 100%;
-        }
-
-        .text{
-            width: 50%;
-            height: 80vh;
-            background-color:  rgb(25, 37, 37);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgb(255, 254, 242);
-        }
-
-        .bcimg{
-            width: 50%;
-            height: 80vh;
-            background-position: center;
-            background-size: cover;
-            background-image: url('img/about.jpg');
-        }
-
-        .box{
-            width: 80%;
-        }
-
-        h3{
-            border-bottom: 0.5px solid rgb(255, 255, 255);
-            padding: 10px 0 10px 0;
-    
-        }
-        h4{
-            margin-top: 20px; 
-            letter-spacing: 2.5px;
-        }
-
-        @media (max-width: 1140px) {
-            .con{
-                width: 100%;
-                flex-direction: column-reverse;
-            }
-            .bcimg{
-                width: 100%;
-                height: 55vh;
-            }
-            .text{
-               width: 100%;
-               height: 50vh;
-            }
-
-        }
-
-        @media (max-width: 768px) {
-            .con{
-                width: 100%;
-                flex-direction: column-reverse;
-            }
-            .bcimg{
-                width: 100%;
-                height: 50vh;
-            }
-            .text{
-               width: 100%;
-               height: 35vh;
-            }
-
-        }
-
-        @media (max-width: 450px) {
-            .con{
-                width: 100%;
-                flex-direction: column-reverse;
-            }
-            .bcimg{
-                width: 100%;
-                height: 50vh;
-            }
-            .text{
-               width: 100%;
-               height: 75vh;
-            }
-        }
-
-        @media (max-width: 320px) {
-
-            .text{
-               width: 100%;
-               height: 60vh;
-               font-size: 10px;
-            }
-            
-            h3{
-                font-size: 1.2rem;
-            }
-            h4{
-                font-size: 1rem;
-            }
-        }
-        
-        #section-3{
-            width: 100%;
-        }
-
-        .bcimg-1{
-            width: 50%;
-            height: 80vh;
-            background-position: center;
-            background-size: cover;
-            background-image: url('img/about-1.jpg');
-        }
-
-        .textbg{
-            background-color: rgb(63, 56, 48);
-        }
-
-        @media (max-width: 1140px) {
-            .bcimg-1{
-                width: 100%;
-                height: 55vh;      
-            }
-        }
-
-        @media (max-width: 768px) {
-            .bcimg-1{
-                width: 100%;
-                height: 50vh;
-            }
-        }
-
-        @media (max-width: 420px) {
-            .bcimg-1{
-                width: 100%;
-                height: 50vh;
-            }
- 
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <div id="bgnav">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
 
@@ -324,9 +42,7 @@
         </nav>
     </div>
 
-
-
-
+    <!-- SWIPER -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="img/03.jpg" class="w-100 h-50" alt=""></div>
@@ -334,19 +50,11 @@
             <div class="swiper-slide"><img src="img/01.jpg" class="w-100" alt=""></div>
             <div class="swiper-slide"><img src="img/14.jpg" class="w-100" alt=""></div>
             <div class="swiper-slide"><img src="img/19.jpg" class="w-100" alt=""></div>
-
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
-
-
-
-
-
-
-
-
+    <!-- 商品 -->
     <div id="section-1" class="py-5">
         <div class="container">
             <div class="row">
@@ -394,7 +102,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Lightbox -->
     <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -508,12 +216,6 @@
         </div>
     </div>
 
-
-
-
-
-
-
     <!--lax parallax-->
     <section id="parallax">
         <div class="background">
@@ -529,12 +231,7 @@
         </div>
     </section>
 
-
-
-
-
-
-
+    <!--店鋪-->
     <div id="section-4" class=" py-5">
         <h1 class="mb-1.5 text-center" style="font-family:Microsoft JhengHei; font-size: 35px;">查詢門店</h1>
         <div class="container">
@@ -564,9 +261,12 @@
         </div>
     </div>
 
+    <!--回到最上-->
     <a id="gototop" href="#">
         <div></div>
     </a>
+
+    <!--頁尾-->
     <footer>本網頁僅供教學及練習使用，若有冒犯請洽0978-290629</footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -581,33 +281,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            loop: true,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2800,
-                disableOnInteraction: false,
-            }
-        });
-
-        window.onload = function () {
-            lax.setup() // init
-
-            const updateLax = () => {
-                lax.update(window.scrollY)
-                window.requestAnimationFrame(updateLax)
-            }
-
-            window.requestAnimationFrame(updateLax)
-        }   
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
