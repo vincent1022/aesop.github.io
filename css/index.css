@@ -124,7 +124,7 @@ footer {
     /* line-height: 50px; */
     transition: 0.05s;
     /* border: 1px solid white; */
-    background-image: url('img/15.png');
+    background-image: url('../img/15.png');
     background-size: cover;
     background-position: center;
 
