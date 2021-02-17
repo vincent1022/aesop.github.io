@@ -76,7 +76,7 @@ footer {
 
 #parallax {
     position: relative;
-    height: 6000px;
+    height: 4000px;
 }
 
 .background {
@@ -102,6 +102,21 @@ footer {
     text-align: center;
 }
 
+.parallax_text1 {
+    font-size: 30px;
+    color: white;
+    width: 75%;
+    position: absolute;
+    text-align: center;
+}
+
+.parallax_text2 {
+    font-size: 30px;
+    color: white;
+    width: 75%;
+    position: absolute;
+    text-align: center;
+}
 
 
 #gototop {
