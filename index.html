@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aesop</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aesop</title>
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous"
+  />
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
 
-  <body>
-    <!-- NAVBAR -->
-    <div id="bgnav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand mr-xl-4" href="#"
-          ><img
+<body>
+<!-- NAVBAR -->
+<div id="bgnav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand mr-xl-4" href="#"
+    ><img
             src="img/logo.png"
             style="
               width: 120px;
@@ -42,433 +42,433 @@
               background-position: center;
             "
             alt=""
-        /></a>
+    /></a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#section-1"
-                style="font-family: Microsoft JhengHei"
-                >商品</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#section-2"
-                style="font-family: Microsoft JhengHei"
-                >閱覽</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#parallax"
-                style="font-family: Microsoft JhengHei"
-                >哲學</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#section-4"
-                style="font-family: Microsoft JhengHei"
-                >店鋪</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-lg-0">
+        <li class="nav-item">
+          <a
+                  class="nav-link"
+                  href="#section-1"
+                  style="font-family: Microsoft JhengHei"
+          >商品</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+                  class="nav-link"
+                  href="#section-2"
+                  style="font-family: Microsoft JhengHei"
+          >閱覽</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+                  class="nav-link"
+                  href="#parallax"
+                  style="font-family: Microsoft JhengHei"
+          >哲學</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+                  class="nav-link"
+                  href="#section-4"
+                  style="font-family: Microsoft JhengHei"
+          >店鋪</a
+          >
+        </li>
+      </ul>
     </div>
+  </nav>
+</div>
 
-    <!-- SWIPER -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="img/03.jpg" class="w-100 h-50" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/17.jpg" class="w-100" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/01.jpg" class="w-100" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/14.jpg" class="w-100" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/19.jpg" class="w-100" alt="" />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
+<!-- SWIPER -->
+<div class="swiper-container" id="container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="img/03.jpg" class="w-100 h-50" alt="" />
     </div>
-
-    <!-- 商品 -->
-    <div id="section-1" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-3 py-3">
-            <div
-              class="card"
-              data-toggle="modal"
-              data-target="#exampleModalCenter-1"
-            >
-              <img src="img/10.png" class="card-img-top mt-3" alt="..." />
-              <div class="card-body">
-                <h5 style="text-align: center">熾香水</h5>
-                <p
-                  class="card-text"
-                  style="text-decoration: none; font-family: Microsoft JhengHei"
-                >
-                  微妙的迷人香氛，煙燻香調搭配上淡淡辛香，轉為深綠的木質土壤氣息
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 py-3">
-            <div
-              class="card"
-              data-toggle="modal"
-              data-target="#exampleModalCenter-2"
-            >
-              <img src="img/11.png" class="card-img-top mt-3" alt="..." />
-              <div class="card-body">
-                <h5 style="text-align: center">悟香水</h5>
-                <p
-                  class="card-text"
-                  style="text-decoration: none; font-family: Microsoft JhengHei"
-                >
-                  加入大量羅勒調配，並散發出陣陣柑橘清香，令人感到活力充沛
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 py-3">
-            <div
-              class="card"
-              data-toggle="modal"
-              data-target="#exampleModalCenter-3"
-            >
-              <img src="img/12.png" class="card-img-top mt-3" alt="..." />
-              <div class="card-body">
-                <h5 style="text-align: center">馬拉喀什香水</h5>
-                <p
-                  class="card-text"
-                  style="text-decoration: none; font-family: Microsoft JhengHei"
-                >
-                  融合傳統與創新，一款以東方木質與新鮮花香的濃郁香芬，帶有一抹野性色彩
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 py-3">
-            <div
-              class="card"
-              data-toggle="modal"
-              data-target="#exampleModalCenter-4"
-            >
-              <img src="img/13.png" class="card-img-top mt-3" alt="..." />
-              <div class="card-body">
-                <h5 style="text-align: center">馥香水</h5>
-                <p
-                  class="card-text"
-                  style="text-decoration: none; font-family: Microsoft JhengHei"
-                >
-                  是以玫瑰為主角的香水紫蘇與煙燻調的木質土壤香氣更深刻了此香氛創作
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="swiper-slide">
+      <img src="img/17.jpg" class="w-100" alt="" />
     </div>
-
-    <!-- Lightbox -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter-1"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">熾香水</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/10.png" class="card-img-top mt-3" alt="..." />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onclick="location.href='https://reurl.cc/O19e0R'"
-            >
-              BUY NOW
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="swiper-slide">
+      <img src="img/01.jpg" class="w-100" alt="" />
     </div>
-
-    <div
-      class="modal fade"
-      id="exampleModalCenter-2"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">悟香水</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/11.png" class="card-img-top mt-3" alt="..." />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onclick="location.href='https://reurl.cc/3DvZ59'"
-            >
-              BUY NOW
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="swiper-slide">
+      <img src="img/14.jpg" class="w-100" alt="" />
     </div>
-
-    <div
-      class="modal fade"
-      id="exampleModalCenter-3"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">
-              馬拉喀什淡香水
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/12.png" class="card-img-top mt-3" alt="..." />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onclick="location.href='https://reurl.cc/mnENvW'"
-            >
-              BUY NOW
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="swiper-slide">
+      <img src="img/19.jpg" class="w-100" alt="" />
     </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
 
-    <div
-      class="modal fade"
-      id="exampleModalCenter-4"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">馥香水</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/13.png" class="card-img-top mt-3" alt="..." />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onclick="location.href='https://reurl.cc/oLWqev'"
-            >
-              BUY NOW
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--閱覽-->
-    <div id="section-2">
-      <div class="con d-flex flex-wrap">
-        <div class="text" style="font-family: Microsoft JhengHei">
-          <div class="box">
-            <h3>我們的故事</h3>
-            <h4>
-              成立於1987年，總部位於墨爾本，並於世界各地設有多間店舖，我們一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。每間店舖的專業顧問都會十分樂意為你介紹產品，為你挑選最合適的選擇。
-            </h4>
-          </div>
-        </div>
-        <div class="bcimg"></div>
-      </div>
-    </div>
-
-    <div id="section-3">
-      <div class="con d-flex flex-wrap">
-        <div class="bcimg-1 order-1 order-lg-0"></div>
-        <div class="text textbg" style="font-family: Microsoft JhengHei">
-          <div class="box">
-            <h3>產品研製</h3>
-            <h4>
-              我們專業的科研專家團隊在Aesop總部的專門實驗室內默默耕耘，努力構思更多新產品、研發新配方，為產品構建雛型。我們用於創製產品的各種優質成分，均來自全球最具信譽的供應商，確保質量得到保證。
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--lax parallax-->
-    <section id="parallax">
-      <div class="background">
-        <p
-          class="parallax_text"
+<!-- 商品 -->
+<div id="section-1" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 py-3">
+        <div
+                class="card"
+                data-toggle="modal"
+                data-target="#exampleModalCenter-1"
         >
-          ‘It is your duty in life to save your dream.’
-        </p>
-        <!-- <p
-          style="font-family: Microsoft JhengHei"
-          class="parallax_text"
-        >
-          細膩入微，浮豔綻放
-        </p>
-        <p
-          class="parallax_text"
-        >
-          ‘Life is as full of paradoxes as roses are of thorns.’
-        </p> -->
+          <img src="img/10.png" class="card-img-top mt-3" alt="..." />
+          <div class="card-body">
+            <h5 style="text-align: center">熾香水</h5>
+            <p
+                    class="card-text"
+                    style="text-decoration: none; font-family: Microsoft JhengHei"
+            >
+              微妙的迷人香氛，煙燻香調搭配上淡淡辛香，轉為深綠的木質土壤氣息
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="col-12 col-lg-3 py-3">
+        <div
+                class="card"
+                data-toggle="modal"
+                data-target="#exampleModalCenter-2"
+        >
+          <img src="img/11.png" class="card-img-top mt-3" alt="..." />
+          <div class="card-body">
+            <h5 style="text-align: center">悟香水</h5>
+            <p
+                    class="card-text"
+                    style="text-decoration: none; font-family: Microsoft JhengHei"
+            >
+              加入大量羅勒調配，並散發出陣陣柑橘清香，令人感到活力充沛
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 py-3">
+        <div
+                class="card"
+                data-toggle="modal"
+                data-target="#exampleModalCenter-3"
+        >
+          <img src="img/12.png" class="card-img-top mt-3" alt="..." />
+          <div class="card-body">
+            <h5 style="text-align: center">馬拉喀什香水</h5>
+            <p
+                    class="card-text"
+                    style="text-decoration: none; font-family: Microsoft JhengHei"
+            >
+              融合傳統與創新，一款以東方木質與新鮮花香的濃郁香芬，帶有一抹野性色彩
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 py-3">
+        <div
+                class="card"
+                data-toggle="modal"
+                data-target="#exampleModalCenter-4"
+        >
+          <img src="img/13.png" class="card-img-top mt-3" alt="..." />
+          <div class="card-body">
+            <h5 style="text-align: center">馥香水</h5>
+            <p
+                    class="card-text"
+                    style="text-decoration: none; font-family: Microsoft JhengHei"
+            >
+              是以玫瑰為主角的香水紫蘇與煙燻調的木質土壤香氣更深刻了此香氛創作
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!--店鋪-->
-    <div id="section-4" class="py-5">
-      <h1
-        class="mb-1.5 text-center"
-        style="font-family: Microsoft JhengHei; font-size: 35px"
+<!-- Lightbox -->
+<div
+        class="modal fade"
+        id="exampleModalCenter-1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">熾香水</h5>
+        <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/10.png" class="card-img-top mt-3" alt="..." />
+      </div>
+      <div class="modal-footer">
+        <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="location.href='https://www.aesop.com/tw/p/fragrance/tacit/tacit-eau-de-parfum/'"
+        >
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+        class="modal fade"
+        id="exampleModalCenter-2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">悟香水</h5>
+        <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/11.png" class="card-img-top mt-3" alt="..." />
+      </div>
+      <div class="modal-footer">
+        <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="location.href='https://www.aesop.com/tw/p/fragrance/tacit/tacit-eau-de-parfum/'"
+        >
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+        class="modal fade"
+        id="exampleModalCenter-3"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">
+          馬拉喀什淡香水
+        </h5>
+        <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/12.png" class="card-img-top mt-3" alt="..." />
+      </div>
+      <div class="modal-footer">
+        <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="location.href='https://www.aesop.com/tw/p/fragrance/tacit/tacit-eau-de-parfum/'"
+        >
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+        class="modal fade"
+        id="exampleModalCenter-4"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">馥香水</h5>
+        <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/13.png" class="card-img-top mt-3" alt="..." />
+      </div>
+      <div class="modal-footer">
+        <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="location.href='https://www.aesop.com/tw/p/fragrance/tacit/tacit-eau-de-parfum/'"
+        >
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--閱覽-->
+<div id="section-2">
+  <div class="con d-flex flex-wrap">
+    <div class="text" style="font-family: Microsoft JhengHei">
+      <div class="box">
+        <h3>我們的故事</h3>
+        <h4>
+          成立於1987年，總部位於墨爾本，並於世界各地設有多間店舖，我們一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。每間店舖的專業顧問都會十分樂意為你介紹產品，為你挑選最合適的選擇。
+        </h4>
+      </div>
+    </div>
+    <div class="bcimg"></div>
+  </div>
+</div>
+
+<div id="section-3">
+  <div class="con d-flex flex-wrap">
+    <div class="bcimg-1 order-1 order-lg-0"></div>
+    <div class="text textbg" style="font-family: Microsoft JhengHei">
+      <div class="box">
+        <h3>產品研製</h3>
+        <h4>
+          我們專業的科研專家團隊在Aesop總部的專門實驗室內默默耕耘，努力構思更多新產品、研發新配方，為產品構建雛型。我們用於創製產品的各種優質成分，均來自全球最具信譽的供應商，確保質量得到保證。
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--lax parallax-->
+<section id="parallax">
+  <div class="background">
+    <p
+            class="parallax_text"
+    >
+      ‘It is your duty in life to save your dream.’
+    </p>
+    <!-- <p
+      style="font-family: Microsoft JhengHei"
+      class="parallax_text"
+    >
+      細膩入微，浮豔綻放
+    </p>
+    <p
+      class="parallax_text"
+    >
+      ‘Life is as full of paradoxes as roses are of thorns.’
+    </p> -->
+  </div>
+</section>
+
+<!--店鋪-->
+<div id="section-4" class="py-5">
+  <h1
+          class="mb-1.5 text-center"
+          style="font-family: Microsoft JhengHei; font-size: 35px"
+  >
+    查詢門店
+  </h1>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 col-lg-6">
+        <img src="img/09.jpg" class="w-100 h-40 py-4" alt="..." />
+      </div>
+      <div
+              class="col-12 col-lg-6 d-flex align-items-start flex-column justify-content-center"
       >
-        查詢門店
-      </h1>
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 col-lg-6">
-            <img src="img/09.jpg" class="w-100 h-40 py-4" alt="..." />
-          </div>
-          <div
-            class="col-12 col-lg-6 d-flex align-items-start flex-column justify-content-center"
-          >
-            <h5>新光三越台中中港店</h5>
-            <h5 style="font-family: Microsoft JhengHei">
-              台中市西屯區台灣大道三段301號3樓
-            </h5>
-            <h5 style="font-family: Microsoft JhengHei">
-              連絡電話 : +886 4 2251 7195
-            </h5>
-            <h5
-              class="d-flex flex-wrap"
-              style="font-family: Microsoft JhengHei"
-            >
-              營業時間 : 11:00-22:00
-            </h5>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div
-            class="col-12 col-lg-6 order-1 order-lg-0 d-flex align-items-xl-end align-items-sm-start flex-column justify-content-center"
-          >
-            <h5>勤美誠品綠園道店</h5>
-            <h5 style="font-family: Microsoft JhengHei">
-              台中市西區公益路68號2樓
-            </h5>
-            <h5 style="font-family: Microsoft JhengHei">
-              連絡電話 : + 886 5 2322 1200
-            </h5>
-            <h5
-              class="d-flex flex-wrap"
-              style="font-family: Microsoft JhengHei"
-            >
-              營業時間 : 11:00-22:00
-            </h5>
-          </div>
-          <div class="col-12 col-lg-6">
-            <img src="img/08.jpg" class="w-100 h-150 py-4" alt="..." />
-          </div>
-        </div>
+        <h5>新光三越台中中港店</h5>
+        <h5 style="font-family: Microsoft JhengHei">
+          台中市西屯區台灣大道三段301號3樓
+        </h5>
+        <h5 style="font-family: Microsoft JhengHei">
+          連絡電話 : +886 4 2251 7195
+        </h5>
+        <h5
+                class="d-flex flex-wrap"
+                style="font-family: Microsoft JhengHei"
+        >
+          營業時間 : 11:00-22:00
+        </h5>
       </div>
     </div>
+    <div class="row mb-5">
+      <div
+              class="col-12 col-lg-6 order-1 order-lg-0 d-flex align-items-xl-end align-items-sm-start flex-column justify-content-center"
+      >
+        <h5>勤美誠品綠園道店</h5>
+        <h5 style="font-family: Microsoft JhengHei">
+          台中市西區公益路68號2樓
+        </h5>
+        <h5 style="font-family: Microsoft JhengHei">
+          連絡電話 : + 886 5 2322 1200
+        </h5>
+        <h5
+                class="d-flex flex-wrap"
+                style="font-family: Microsoft JhengHei"
+        >
+          營業時間 : 11:00-22:00
+        </h5>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img src="img/08.jpg" class="w-100 h-150 py-4" alt="..." />
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!--回到最上-->
-    <a id="gototop" href="#">
-      <div></div>
-    </a>
+<!--回到最上-->
+<a id="gototop" href="#">
+  <div></div>
+</a>
 
-    <!--頁尾-->
-    <footer>本網頁僅供教學及練習使用，若有冒犯請洽0978-290629</footer>
+<!--頁尾-->
+<footer>本網頁僅供教學及練習使用，若有冒犯請洽0978-290629</footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
 </html>
